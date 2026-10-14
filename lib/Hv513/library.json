@@ -1,0 +1,18 @@
+{
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+    "name": "Hv513",
+    "authors":[
+        {
+            "name": "Steven R. Loomis",
+            "email": "srl295@gmail.com",
+            "maintainer": true,
+            "url": "https://codehivetx.us"
+        }
+    ],
+    "description": "Driver for Supertex HV513",
+    "license": "Apache-2.0",
+    "platforms": [
+        "Arduino"
+    ],
+    "version": "1.0.0"
+}
