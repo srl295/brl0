@@ -12,14 +12,19 @@ const int D4_TIME = (HV_TIME / 4);
 
 Hv513::Hv513(uint8_t clk, uint8_t le, uint8_t din):
 clk_(clk), le_(le), din_(din) {
-    pinMode(clk, OUTPUT);
-    pinMode(le, OUTPUT);
-    pinMode(le, OUTPUT);
+    pinMode(clk_, OUTPUT);
+    pinMode(le_, OUTPUT);
+    pinMode(din_, OUTPUT);
+    digitalWrite(le_, LOW);
+    digitalWrite(clk_, :PW);
+    digitalWrite(din_, LOW);
 }
 
 void
-Hv513::latchEnable(bool leHigh) {
-    digitalWrite(le_, leHigh);
+Hv513::latchEnable() {
+    digitalWrite(le_, HIGH);
+    delay(TIME_LE);
+    digitalWrite(le_, LOW);
     delay(TIME_LE);
 }
 
