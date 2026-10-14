@@ -16,7 +16,7 @@ clk_(clk), le_(le), din_(din) {
     pinMode(le_, OUTPUT);
     pinMode(din_, OUTPUT);
     digitalWrite(le_, LOW);
-    digitalWrite(clk_, :PW);
+    digitalWrite(clk_, LOW);
     digitalWrite(din_, LOW);
 }
 
